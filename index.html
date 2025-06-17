@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ela Mihelčić - Početna</title>
+    <style>
+	@font-face {
+            font-family: 'EMihelcic';
+            src: url('font/EMihelcic.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        :root {
+            --primary: #9c2fd3;
+            --primary-dark: #2ecc71;
+            --bg-gradient: linear-gradient(10deg, #f9e7e9 0%, #e9eeff 100%);
+            --container-bg: #fff;
+            --shadow: 0 100px 260px rgba(0,0,0,0.08);
+            --radius: 10px;
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            background: url('fotografije/ja.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: var(--container-bg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 40px 60px;
+            text-align: center;
+            min-width: 300px;
+            max-width: 600px;
+            width: 100%;
+            position: relative;
+        }
+        h1 {
+            margin: 0 0 10px 0;
+            font-size: 6.2em;
+            color: var(--primary-dark);
+            font-family: 'EMihelcic', sans-serif;
+            letter-spacing: 5px;
+			word-spacing: 20px;
+        }
+
+        h2 {
+            margin: 0 0 5px 0;
+            font-size: 2.2em;
+            color: #7b6fa6;
+            font-weight: 30;
+        }
+        .welcome {
+            margin-bottom: 10px;
+            color: #888;
+        }
+        nav {
+            margin-bottom: 2px;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .nav-buttons a {
+            text-decoration: none;
+        }
+        .nav-buttons button {
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: var(--radius);
+            padding: 10px 10px;
+            font-size: 1.8em;
+            cursor: pointer;
+            transition: background 2.2s;
+        }
+        .nav-buttons button.active,
+        .nav-buttons button:focus {
+            background: var(--primary-dark);
+            color: #59167;
+        }
+        @media (max-width: 100px) {
+            .container {
+                padding: 20px 10px;
+                min-width: unset;
+                max-width: 18vw;
+            }
+            .nav-buttons {
+                flex-direction: column;
+                gap: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ela  MihelCic</h1>
+        <h2>Digitalni multimedij 1</h2>
+        <div class="welcome">Bok, ja sam Ela, ovo je moja stranica za digitalni multimedij na Grafičkom fakultetu. :)</div>
+        <nav>
+            <div class="nav-buttons">
+                <a href="index.html"><button class="active">Naslovnica</button></a>
+                <a href="omeni.html"><button>O meni</button></a>
+                <a href="vjezbe.html"><button>Vježbe</button></a>
+                <a href="video.html"><button>Video</button></a>
+            </div>
+        </nav>
+        <section>
+            <h2>Početna</h2>
+            <p>Na sljedećim stranicama možete pročitati nešto o meni i vidjeti neke od mojih fotografija, radova i projekata!</p>
+
+</div>
+
+        </section>
+    </div>
+</body>
+</html>

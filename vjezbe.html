@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ela Mihelčić - Vježbe</title>
+    <style>
+        :root {
+            --primary: #9c2fd3;
+            --primary-dark: #2ecc71;
+            --bg-gradient: linear-gradient(10deg, #f9e7e9 0%, #e9eeff 100%);
+            --container-bg: #fff;
+            --shadow: 0 100px 260px rgba(0,0,0,0.08);
+            --radius: 10px;
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            background: url('fotografije/ja.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: var(--container-bg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 30px 40px;
+            max-width: 900px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 4em;
+            color: var(--primary-dark);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .nav-buttons a {
+            text-decoration: none;
+        }
+        .nav-buttons button {
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: var(--radius);
+            padding: 10px 20px;
+            font-size: 1.8em;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .nav-buttons button.active,
+        .nav-buttons button:focus {
+            background: var(--primary-dark);
+            color: #59167;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #7b6fa6;
+        }
+        .section img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            display: block;
+            margin: 10px auto;
+        }
+        p {
+            text-align: justify;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-buttons">
+                <a href="index.html"><button>Naslovnica</button></a>
+                <a href="omeni.html"><button>O meni</button></a>
+                <a href="vjezbe.html"><button class="active">Vježbe</button></a>
+                <a href="video.html"><button>Video</button></a>
+            </div>
+        </nav>
+
+        <h1>Moje vježbe i projekti</h1>
+
+        <div class="section">
+            <h2>PROJEKTNI ZADATAK 1 – Illustrator</h2>
+            <p>U ovoj vježbi zadatak je bio napraviti vlastiti font, upotrijebiti ga te pomoću alata za crtanje Bezierovih krivulja nacrtati sliku prema zadanom predlošku. Ja sam dobila sliku flamingosa, a zadatak sam napravila u Inkscape-u.</p>
+            <img src="radovi/Ela_Mihelcic_projektni_zadatak_1.jpg" alt="Projektni zadatak 1">
+        </div>
+
+        <div class="section">
+            <h2>VJEŽBA 6 – Koloriranje</h2>
+            <p>Ova vježba fokusirala se na tehnike neinvazivnog koloriranja slike koje se može primijeniti na crno-bijele slike ili slike u boji kojima želimo promijeniti nijansu određenih područja. </p>
+            <img src="radovi/ElaMihelcic.vježba.6.jpg" alt="Vježba 6">
+        </div>
+
+        <div class="section">
+            <h2>VJEŽBA 3 – Boja, transformacije</h2>
+            <p>Korištenjem Photoshopa radili smo na crtanju oblika prema predlošku i transformaciji oblika. Ja sam napravila svoj crtež pomoću alata Pen kopirajuči originalne konture. </p>
+            <img src="radovi/elamihelcic V3b.png" alt="Vježba 3">
+        </div>
+
+        <div class="section">
+            <h2>VJEŽBA 4 – Gradijenti, transparencija</h2>
+            <p>U vježbi se obrađuje tema izrade složenih objekata koji se sastoje od više staza metodama spajanja (Unite/Compound path) ili oduzimanja oblika (Difference/Subtract).
+Apliciranje različitih vrsta gradijenata (linearni, radijalni, mesh...) od dvije ili više boja.
+Transparencija i poredak slojeva u izradi složene grafike.</p>
+            <img src="radovi/elamihelcic V4.jpg" alt="Vježba 4">
+        </div>
+
+        <div class="section">
+            <h2>VJEŽBA 7, PROJEKTNI ZADATAK 2 – Fotomontaža</h2>
+            <p>Vježba 7, ujedno i projektni zadatak, bio je u svrhu razumijevanja fotomontaže, ubacivanje sjena, proporcija i perspektive. Oba rada napravila sam u programu Photoshop.</p>
+            <img src="radovi/PHOTOSHOP.VJEZBE.jpg" alt="Vježba 5">
+        </div>
+
+    </div>
+</body>
+</html>
+
